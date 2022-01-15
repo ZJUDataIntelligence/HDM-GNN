@@ -1,0 +1,59 @@
+{
+  "CRIME_DATA_PATH" : "../data/crime_counts_2020_byClass.npy",
+  "CRIME_LABEL_DATA_PATH" : "../data/crime_counts_2020.npy",
+  "A311_DATA_PATH" : "../data/311_counts_2020_byClass.npy",
+  "POI_DATA_PATH" : "../data/poi_counts_2020_byClass.npy",
+  "TAXI_DATA_PATH" : "../data/taxi_counts_2020_total.npy",
+  "BIKE_DATA_PATH" : "../data/bike_counts_2020.npy",
+  "GEO_DATA_PATH" : "../data/geo_graph.npy",
+  "SIMI_DATA_PATH" : "../data/simi_nyc_2020.npy",
+
+  "TAXI_EDGE_INDEX" : "../data/taxi_edge_index_list",
+  "BIKE_EDGE_INDEX" : "../data/bike_edge_index_list",
+  "GEO_EDGE_INDEX" : "../data/geo_edge_index",
+  "SIMI_EDGE_INDEX" : "../data/simi_edge_index",
+
+  "NUM_DAYS" : 366,
+  "NUM_AREAS" : 263,
+
+  "NUM_CLASS_CRIME" : 20,
+  "NUM_CLASS_311" : 20,
+  "NUM_CLASS_POI" : 20,
+  "DIM_NODE_FEATURE" : 25,
+
+  "TAXI_THRESHOLD" : 5,
+  "BIKE_THRESHOLD" : 5,
+  "SIMI_THRESHOLD" : 0.7,
+
+  "TIME_SERIES_LENGTH" : 7,
+
+  "REPEAT_TIMES" : 1,
+  "EPOCH" : 101,
+
+  "LEARNING_RATE" : 0.0001,
+  "WEIGHT_DECAY" : 0.0001,
+  "DELTA" : 5.0,
+
+  "NUM_HEADS" : 4,
+  "HIDDEN_CHANNELS" : 1,
+  "NUM_LAYERS" : 1,
+  "DILATION": 1,
+
+  "WITHOUT_N" : 0,
+  "WITHOUT_E" : 0,
+  "WITHOUT_S" : 0,
+  "WITHOUT_T" : 0,
+  "WITHOUT_M" : 0,
+  "WITHOUT_F" : 0,
+
+  "CRIME_DATA" : 1,
+  "POI_DATA" : 1,
+  "311_DATA" : 1,
+
+  "GEO_DATA" : 1,
+  "TAXI_DATA" : 1,
+  "BIKE_DATA" : 1,
+  "SIMI_DATA" : 1,
+
+  "seed" : 1211
+}
