@@ -32,7 +32,6 @@ global_var.set_value('config',config)
 
 from model import STHGNN
 from model_NO_N import STHGNN_N
-from model_E import STHGNN_E
 from model_NO_S import STHGNN_S
 from model_NO_T import STHGNN_T
 from model_NO_M import STHGNN_noM
@@ -136,9 +135,9 @@ for r in range(config['REPEAT_TIMES']):
     if 'WITHOUT_N' in config and config['WITHOUT_N'] == 1:
         model = STHGNN_N(time_series_length=config['TIME_SERIES_LENGTH'], hidden_channels=config['HIDDEN_CHANNELS'],
                        out_channels=1, num_layers=config['NUM_LAYERS'])
-    elif 'WITHOUT_E' in config and config['WITHOUT_E'] == 1:
-        model = STHGNN_E(time_series_length=config['TIME_SERIES_LENGTH'], hidden_channels=config['HIDDEN_CHANNELS'],
-                         out_channels=1, num_layers=config['NUM_LAYERS'])
+    # elif 'WITHOUT_E' in config and config['WITHOUT_E'] == 1:
+    #     model = STHGNN_E(time_series_length=config['TIME_SERIES_LENGTH'], hidden_channels=config['HIDDEN_CHANNELS'],
+    #                      out_channels=1, num_layers=config['NUM_LAYERS'])
     elif 'WITHOUT_S' in config and config['WITHOUT_S'] == 1:
         model = STHGNN_S(time_series_length=config['TIME_SERIES_LENGTH'], hidden_channels=config['HIDDEN_CHANNELS'],
                          out_channels=1, num_layers=config['NUM_LAYERS'])
